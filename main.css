@@ -1,0 +1,19 @@
+body {
+    background-color: #5d687e;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.inputValue {
+    padding: 10px 20px;
+    width: 250px;
+    outline: none;
+}
+
+.submit {
+padding: 5px 10px;
+
+}
