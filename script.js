@@ -13,7 +13,7 @@ var tick = document.querySelector('.tick-tock')
 
 
 submit.addEventListener ('click', function() {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=1d19135b5e0c3aa77f8aa4dd056afed7&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=1d19135b5e0c3aa77f8aa4dd056afed7&units=metric')
     .then(response => response.json())
     .then(data => {
 
