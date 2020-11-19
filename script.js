@@ -13,7 +13,7 @@ var tick = document.querySelector('.tick-tock')
 
 
 submit.addEventListener ('click', function() {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=1d19135b5e0c3aa77f8aa4dd056afed7&units=metric')
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=1d19135b5e0c3aa77f8aa4dd056afed7&units=metric')
     .then(response => response.json())
     .then(data => {
 
@@ -26,7 +26,7 @@ submit.addEventListener ('click', function() {
       temp.innerHTML = Math.round(tempValue)+'&deg'+ 'C';
       desc.innerHTML = descValue;
       
-      image.setAttribute('src', "https://openweathermap.org/img/wn/"+iconValue+"@2x.png");
+      image.setAttribute('src', "http://openweathermap.org/img/wn/"+iconValue+"@2x.png");
       test.appendChild(image);
   
       
