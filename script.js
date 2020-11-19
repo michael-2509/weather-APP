@@ -26,7 +26,7 @@ submit.addEventListener ('click', function() {
       temp.innerHTML = Math.round(tempValue)+'&deg'+ 'C';
       desc.innerHTML = descValue;
       
-      image.setAttribute('src', "http://openweathermap.org/img/wn/"+iconValue+"@2x.png");
+      image.setAttribute('src', "https://openweathermap.org/img/wn/"+iconValue+"@2x.png");
       test.appendChild(image);
   
       
